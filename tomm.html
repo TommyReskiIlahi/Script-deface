@@ -1,0 +1,556 @@
+<html lang="en">
+<meta charset="utf-8">
+
+    <meta name="description" content="[+] Jugde Vulnerable site by CIPOTOK CYBER TEAM">
+    <meta name="author" content="CIPOTOK CYBER TEAM">
+<title></title>
+
+
+
+<script type='text/javascript'>
+
+//<![CDATA[
+
+msg = "[+] CIPOTOK CYBER TEAM [+] ";
+
+msg = "[=] I'm here to JUDGE vulnerable site! SO WATCH YOUR STEP! " + msg;pos = 0;
+
+function scrollMSG() {
+
+document.title = msg.substring(pos, msg.length) + msg.substring(0, pos); pos++;
+
+if (pos > msg.length) pos = 0
+
+window.setTimeout("scrollMSG()",80);
+
+}
+
+scrollMSG();
+
+//]]></script>
+
+<script type='text/javascript'>
+
+var DADrightclicktheme = 'Dark';
+
+var DADrightclickimage = 'FUCK YOU!';</script>
+
+<script type='text/javascript' src="http://tuyulz-blogspot.googlecode.com/files/Anti%20Klik.js"> </script>
+
+<script type="text/javascript" src="http://cayunkatel.googlecode.com/files/rainbows.js"></script>
+
+ 
+
+<style type="text/css">body {cursor:url("http://i45.tinypic.com/1o6cqx.png"),default
+text-size: 30em;
+}</style>  
+
+<body bgcolor="Black">
+<font size="6px">
+ 
+
+</script>
+
+ 
+
+<div align="center" style="color:#FF0000" id="matrix"><b>...::: <font color="cyan">CIPOTOK CYBER TEAM</font> :::...</b></div>
+
+
+
+<style type="text/css">body {
+
+ 
+
+background: #000000;
+
+ 
+
+font-family: Courier New;
+
+ 
+
+color: #ff0000;
+
+ 
+
+text-align: center;
+
+ 
+
+}
+
+ 
+
+a {
+
+ 
+
+text-decoration:none;
+
+ 
+
+color:
+
+ 
+
+#ff0000;
+
+ 
+
+}
+
+ 
+
+</style>
+
+ 
+
+<script type="text/javascript">/+<![CDATA[+/
+
+ 
+
+TypingText = function(element, interval, cursor, finishedCallback) {
+
+ 
+
+if((typeof document.getElementById ==
+
+ 
+
+"undefined") || (typeof element.innerHTML == "undefined")) {
+
+ 
+
+this.running = true;
+
+ 
+
+return;
+
+ 
+
+}
+
+ 
+
+this.element = element;
+
+ 
+
+this.finishedCallback = (finishedCallback
+
+ 
+
+? finishedCallback : function() { return; });
+
+ 
+
+this.interval = (typeof interval == "undefined" ? 100 : interval);
+
+ 
+
+this.origText = this.element.innerHTML;
+
+ 
+
+this.unparsedOrigText = this.origText;
+
+ 
+
+this.cursor = (cursor ? cursor : "");
+
+ 
+
+this.currentText = "";
+
+ 
+
+this.currentChar = 0;
+
+ 
+
+this.element.typingText = this;
+
+ 
+
+if(this.element.id == "") this.element.id = "typingtext" + TypingText.currentIndex++;
+
+ 
+
+TypingText.all.push(this);
+
+ 
+
+this.running = false;
+
+ 
+
+this.inTag = false;
+
+ 
+
+this.tagBuffer = "";
+
+ 
+
+this.inHTMLEntity = false;
+
+ 
+
+this.HTMLEntityBuffer = "";
+
+ 
+
+}
+
+ 
+
+TypingText.all = new Array();
+
+ 
+
+TypingText.currentIndex = 0;
+
+ 
+
+TypingText.runAll
+
+ 
+
+= function() {
+
+ 
+
+for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
+
+ 
+
+}
+
+ 
+
+TypingText.prototype.run = function() {
+
+ 
+
+if(this.running) return;
+
+ 
+
+if(typeof this.origText == "undefined") {
+
+ 
+
+setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+
+ 
+
+return;
+
+ 
+
+}
+
+ 
+
+if(this.currentText == "") this.element.innerHTML = "";
+
+ 
+
+if(this.currentChar < this.origText.length) {
+
+ 
+
+if(this.origText.charAt(this.currentChar) == "<" &&
+
+ 
+
+!this.inTag) {
+
+ 
+
+this.tagBuffer = "<";
+
+ 
+
+this.inTag = true;
+
+ 
+
+this.currentChar++;
+
+ 
+
+this.run();
+
+ 
+
+return;
+
+ 
+
+} else if(this.origText.charAt(this.currentChar) == ">" &&
+
+ 
+
+this.inTag) {
+
+ 
+
+this.tagBuffer += ">";
+
+ 
+
+this.inTag = false;
+
+ 
+
+this.currentText += this.tagBuffer;
+
+ 
+
+this.currentChar++;
+
+ 
+
+this.run();
+
+ 
+
+return;
+
+ 
+
+} else
+
+ 
+
+if(this.inTag) {
+
+ 
+
+this.tagBuffer += this.origText.charAt(this.currentChar);
+
+ 
+
+this.currentChar++;
+
+ 
+
+this.run();
+
+ 
+
+return;
+
+ 
+
+} else
+
+ 
+
+if(this.origText.charAt(this.currentChar) == "&" && !this.inHTMLEntity) {
+
+ 
+
+this.HTMLEntityBuffer = "&";
+
+ 
+
+this.inHTMLEntity = true;
+
+ 
+
+this.currentChar++;
+
+ 
+
+this.run();
+
+ 
+
+return;
+
+ 
+
+} else if(this.origText.charAt(this.currentChar) == ";" && this.inHTMLEntity) {
+
+ 
+
+this.HTMLEntityBuffer += ";";
+
+ 
+
+this.inHTMLEntity =
+
+ 
+
+false;
+
+ 
+
+this.currentText += this.HTMLEntityBuffer;
+
+ 
+
+this.currentChar++;
+
+ 
+
+this.run();
+
+ 
+
+return;
+
+ 
+
+} else if(this.inHTMLEntity) {
+
+ 
+
+this.HTMLEntityBuffer +=
+
+ 
+
+this.origText.charAt(this.currentChar);
+
+ 
+
+this.currentChar++;
+
+ 
+
+this.run();
+
+ 
+
+return;
+
+ 
+
+} else {
+
+ 
+
+this.currentText += this.origText.charAt(this.currentChar);
+
+ 
+
+}
+
+ 
+
+this.element.innerHTML = this.currentText;
+
+ 
+
+this.element.innerHTML += (this.currentChar < this.origText.length - 1 ? (typeof this.cursor == "function" ?
+
+ 
+
+this.cursor(this.currentText) : this.cursor) : "");
+
+ 
+
+this.currentChar++;
+
+ 
+
+setTimeout("document.getElementById('" + this.element.id + "').typingText.run()",
+
+ 
+
+this.interval);
+
+ 
+
+} else {
+
+ 
+
+this.currentText = "";
+
+ 
+
+this.currentChar = 0;
+
+ 
+
+this.running = false;
+
+ 
+
+this.finishedCallback();
+
+ 
+
+}
+
+ 
+
+}
+
+ 
+
+ 
+
+/+]]>+/</script>
+
+
+
+
+<div align="center" style="">
+
+<span style="color: cyan;">
+
+<b> <font color="red">[<font color="Cyan">+</font><font color="Red">]</font></font>root@CCTS-ID:<font color="#FF0000">#</font> </b><marquee scrollamount="13" direction="left" width="60%">PurpFox - CIPOTOK CYBER TEAM - AndroSec1337 Cyber Team - Indonesian Defacer Tersakiti - F424S - Kali Linux - Nethunter - You All!
+
+</marquee>
+</div>
+
+
+<div>
+	
+	<center>
+		<img src="https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/18557388_1577564792277727_4668244500761664570_n.jpg?oh=095ead5fdfa8e608bac08247e7562308&oe=59AE3853" alt="CIPOTOK CYBER TEAM" >
+	</center>
+	
+</div>
+
+
+
+<p align="justify" style="color:00ffff">
++++++++&emsp;&emsp;++++++++&emsp;&emsp;++++++++++<br>
++++++++&emsp;&emsp;++++++++&emsp;&emsp;++++++++++<br>
+++&emsp;&emsp;&emsp; &ensp;&ensp;&ensp;++ &emsp; &emsp; &emsp; &ensp;&ensp; &ensp;&ensp; &ensp; &ensp;++&emsp;<font color="#ff0000">CIPOTOK</font><br>
+++&emsp;&emsp;&emsp; &ensp;&ensp;&ensp;++ &emsp; &emsp; &emsp; &ensp;&ensp; &ensp;&ensp; &ensp; &ensp;++ &emsp; <font color="#ff0000">CYBER</font><br>
+++&emsp;&emsp;&emsp; &ensp;&ensp;&ensp;++ &emsp; &emsp; &emsp; &ensp;&ensp; &ensp;&ensp; &ensp; &ensp;++&emsp;&ensp;<font color="#ff0000">TEAM</font><br>
+
+
++++++++&emsp;&emsp;++++++++&emsp;&emsp;&emsp; &emsp;++<br>
++++++++&emsp;&emsp;++++++++&emsp;&emsp;&emsp; &emsp;++<br>
+
+</p>
+
+<p align="center" id="message" style="color:cyan">-----------------------------------------------------------------------------</p>
+<!-- SlowPrint -->
+<p align="center" id="message" style="color:red"><strong><font size="6">
+	We judge all the Vulnerablities site and Your site too, So Watch my Step Dude!</font></strong>
+</p>
+<p align="center" id="message" style="color:cyan">-----------------------------------------------------------------------------</p>
+<script type="text/javascript">/+<![CDATA[+/ new TypingText(document.getElementById("message"), 10, function(i){ var ar = new Array("_", " ", "_", " "); return " " + ar[i.length % ar.length]; });
+
+//Type out examples:
+
+TypingText.runAll();
+
+ 
+
+/+]]>+/</script>
+
+<embed src="http://www.youtube.com/v/qGaOlfmX8rQ&amp;autoplay=1" type="application/x-shockwave-flash" wmode="transparent" height="1" width="1">
+
+</body>
+
+</html>
